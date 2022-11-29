@@ -8,6 +8,6 @@
     <link rel="stylesheet" href="{{asset('style.css')}}">
 </head>
 <body>
-    <h1>frist page</h1>
+    <h1>html page</h1>
 </body>
 </html>

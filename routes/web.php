@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\controllers\fristcontroller;
+use App\Http\controllers\catController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('catshow/',[fristcontroller::class,'show']);
+// Route::get('catshow/',[fristcontroller::class,'show']);
+Route::get('catshow/',[catController::class,'show']);
+Route::post('add_cat/',[catController::class,'insert']);
+Route::get('edit/',[catController::class,'edit']);
